@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16
+    container_name: flowpilot_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: flowpilot
+      POSTGRES_PASSWORD: flowpilot
+      POSTGRES_DB: flowpilot
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flowpilot -d flowpilot"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
