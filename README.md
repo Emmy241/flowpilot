@@ -23,11 +23,11 @@ That separation, propose vs. act, is the point of the project.
 
 **Proposed action, waiting for approval**
 
-![Approval pending](docs/screenshots/03-approval-pending.png)
+![Approval pending](docs/screenshots/approval-pending.png)
 
 **After approval**
 
-![Approval approved](docs/screenshots/04-approval-approved.png)
+![Approval approved](docs/screenshots/approval-approved.png)
 
 More in [`docs/screenshots/`](docs/screenshots/): login, empty chat, rejected approval, sidebar history, DB state, test output.
 
